@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/tailwind.css" rel="stylesheet">
+    <title>Hero page</title>
+    <style></style>
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-body">
+
+    <header style="background-image: url('img/heropage-min.jpg');"
+        class="relative bg-no-repeat bg-cover bg-center">
+
+        <div class="container mx-auto max-w-screen-lg py-5 px-5 sm:pb-16">
+            <nav class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+                <div class="flex justify-between">
+                    <div class="text-light space-x-4 flex">
+                        <a href="index.html" class="hover:text-white">Accueil</a>
+                        <a href="decouvrir.html"
+                            class="hover:text-white hover:border-green-500 hover:border-b-2 active:bg-green-700">Découvrir</a>
+                    </div>
+                    <!-- champ mobile -->
+                    <button id="menu-btn" class="block flex sm:hidden outline-none focus:outline-none ml-3">
+                        <span class="text-light">
+                            Recherche
+                        </span>
+                        <svg class="w-5 h-5 left-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- search mobile -->
+                <div id="dropdown"
+                    class="block hidden sm:hidden relative bg-gray-800 p-2 mt-4 rounded border-2 border-green-500 flex w-full items-stretch">
+                    <svg id="searchicon" class="w-5 h-5 absolute left-0 ml-2" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <input type="text" id="searchfield"
+                        class="ml-6 bg-transparent text-sm outline-none focus:outline-none focus:shadow-outline w-full pl-2"
+                        placeholder="Rechercher un quiz">
+                </div>
+                <!-- champ lg -->
+                <div
+                    class="hidden sm:block relative bg-gray-800 mx-12 p-2 rounded border-2 border-green-500 flex w-full items-stretch">
+
+                    <svg class="w-5 h-5 absolute left-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <input type="text"
+                        class="ml-6 bg-transparent text-sm outline-none focus:outline-none focus:shadow-outline w-full pl-2"
+                        placeholder="Rechercher un quiz">
+                </div>
+
+
+                <!-- logo -->
+                <h1
+                    class="order-first sm:order-last self-center sm:self-auto pb-3 sm:pb-0 text-xl sm:text-2xl font-bold tracking-wide">
+                    Vendredi.</h1>
+            </nav>
+
+        </div>
+
+        <div class="max-w-5xl mx-auto pb-36">
+            <div class="py-4 px-4 md:w-1/2 ">
+                <h1 class="text-3xl font-extrabold mb-3">Avec "Quiz Vendredi" améliore ta culture générale en
+                    t'amusant !
+                </h1>
+                <p class="leading-relaxed">Tu désires tester tes connaissances ? Tu affrontes tes amis ou tes
+                    proches ? Ou tu ne sais tout
+                    simplement pas quoi faire d'autres ? Tu es le bienvenue sur <strong>Vendredi</strong> !<br><br>
+                </p>
+
+                <!-- Boutons -->
+                <div class="py-2 md:py-4 flex flex-wrap  justify-center md:justify-start items-center">
+                    <button
+                        class="h-14 px-10 bg-purple-900 text-white font-bold uppercase text-sm shadow hover:shadow-lg outline-none focus:outline-none mr-2"
+                        type="button">
+                        Découvrir
+                    </button>
+
+                    <button
+                        class="h-14 md:px-2 bg-purple-900 text-white shadow hover:shadow-lg outline-none focus:outline-none">
+
+                        <div class="flex items-center">
+                            <div class="w-14">
+                                <i class="fas fa-dice fa-2x"></i>
+                            </div>
+                            <div class="hidden lg:block pl-2 pr-3 font-bold uppercase text-sm">
+                                Aléatoire
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+</body>
+
+</html>

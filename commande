@@ -1,0 +1,6 @@
+npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css
+
+//Extensions
+textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+      borderWidth: ['hover'],
+      backgroundColor: ['active'],

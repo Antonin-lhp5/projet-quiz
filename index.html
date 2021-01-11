@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quiz work</title>
+    <style></style>
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-body">
+<div>
+    <header class="container mx-auto max-w-screen-lg py-5 px-5">
+
+        <nav class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+            <div class="flex justify-between">
+                <div class="text-light space-x-4 flex">
+                    <a href="index.html" class="hover:text-white">Accueil</a>
+                    <a href="decouvrir.html"
+                        class="hover:text-white hover:border-green-500 hover:border-b-2 active:bg-green-700">Découvrir</a>
+                </div>
+                <!-- champ mobile -->
+                <button id="menu-btn" class="block flex sm:hidden outline-none focus:outline-none ml-3">
+                    <span class="text-light">
+                        Recherche
+                    </span>
+                    <svg class="w-5 h-5 left-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- search mobile -->
+            <div id="dropdown"
+                class="block hidden sm:hidden relative bg-gray-800 p-2 mt-4 rounded border-2 border-green-500 flex w-full items-stretch">
+                <svg id="searchicon" class="w-5 h-5 absolute left-0 ml-2" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <input type="text" id="searchfield"
+                    class="ml-6 bg-transparent text-sm outline-none focus:outline-none focus:shadow-outline w-full pl-2"
+                    placeholder="Rechercher un quiz">
+            </div>
+            <!-- champ lg -->
+            <div
+                class="hidden sm:block relative bg-gray-800 mx-12 p-2 rounded border-2 border-green-500 flex w-full items-stretch">
+
+                <svg class="w-5 h-5 absolute left-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <input type="text"
+                    class="ml-6 bg-transparent text-sm outline-none focus:outline-none focus:shadow-outline w-full pl-2"
+                    placeholder="Rechercher un quiz">
+            </div>
+
+ 
+            <!-- logo -->
+            <h1
+                class="order-first sm:order-last self-center sm:self-auto pb-3 sm:pb-0 text-xl sm:text-2xl font-bold tracking-wide">
+                Vendredi.</h1>
+        </nav>
+
+    </header>
+
+    <main class="container mx-auto max-w-screen-lg md:px-5">
+
+        <!-- galerie quiz -->
+
+        <div class="flex text-xs md:text-sm font-light pb-3 px-3">
+
+            <span>5</span>
+            <h2 class="ml-1 ">Quiz</h2>
+
+            </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 px-2">
+
+            <div>
+                <a
+                    class="flex py-2 md:py-3 px-3 group rounded-lg hover:bg-gray-800 hover:shadow-lg transition duration-300 ease-in-out">
+                    <div class="">
+                        <div class="bg-purple-700 h-20 w-20 md:h-24 md:w-24 rounded-lg "></div>
+                    </div>
+                    <div class="pl-5 py-1 space-y-1">
+                        <h1 class="text-xs sm:text-sm">Loisirs</h1>
+                        <h2 class="text-sm sm:text-base custom-truncate leading-tight group-hover:text-indigo-200">Nos
+                            anciennes consoles de jeux vidéos !</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a
+                    class="flex py-2 md:py-3 px-3 group rounded-lg hover:bg-gray-800 hover:shadow-lg transition duration-300 ease-in-out">
+                    <div class="">
+                        <div class="bg-red-700 h-20 w-20 md:h-24 md:w-24 rounded-lg "></div>
+                    </div>
+                    <div class="pl-5 py-1 space-y-1">
+                        <h1 class="text-xs sm:text-sm">Nature</h1>
+                        <h2 class="text-sm sm:text-base custom-truncate leading-tight group-hover:text-indigo-200">Les
+                            lapins et leurs terriers</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a
+                    class="flex py-2 md:py-3 px-3 group rounded-lg hover:bg-gray-800 hover:shadow-lg transition duration-300 ease-in-out">
+                    <div class="">
+                        <div class="bg-green-700 h-20 w-20 md:h-24 md:w-24 rounded-lg "></div>
+                    </div>
+                    <div class="pl-5 py-1 space-y-1">
+                        <h1 class="text-xs sm:text-sm">Nature</h1>
+                        <h2 class="text-sm sm:text-base custom-truncate leading-tight group-hover:text-indigo-200">Les
+                            proies des prédateurs</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a
+                    class="flex py-2 md:py-3 px-3 group rounded-lg hover:bg-gray-800 hover:shadow-lg transition duration-300 ease-in-out">
+                    <div class="">
+                        <div class="bg-indigo-700 h-20 w-20 md:h-24 md:w-24 rounded-lg "></div>
+                    </div>
+                    <div class="pl-5 py-1 space-y-1">
+                        <h1 class="text-xs sm:text-sm">Science</h1>
+                        <h2 class="text-sm sm:text-base custom-truncate leading-tight group-hover:text-indigo-200">Les
+                            différents volcans et leurs présences géographiques</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a
+                    class="flex py-2 md:py-3 px-3 group rounded-lg hover:bg-gray-800 hover:shadow-lg transition duration-300 ease-in-out">
+                    <div class="">
+                        <div class="bg-yellow-700 h-20 w-20 md:h-24 md:w-24 rounded-lg "></div>
+                    </div>
+                    <div class="pl-5 py-1 space-y-1">
+                        <h1 class="text-xs sm:text-sm">Histoire</h1>
+                        <h2 class="text-sm sm:text-base custom-truncate leading-tight group-hover:text-indigo-200">Les
+                            mythes de la grèce antique</h2>
+                    </div>
+                </a>
+            </div>
+
+
+            <!-- end galerie -->
+        </div>
+
+<div class="bg-hero">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique sequi non nostrum aliquid quae modi, nam eveniet esse magni assumenda quam sapiente excepturi alias veniam quisquam quasi. Expedita, mollitia.
+    Fugiat tempora, repellendus earum eaque quae suscipit libero, asperiores cum repellat corrupti aspernatur voluptatem consequuntur dolores eius? In accusantium ipsum, ut delectus ab enim quam tempore quae fuga numquam repudiandae?
+    Autem modi nesciunt quis neque earum laboriosam magni totam blanditiis iusto maiores fuga ut esse aut exercitationem consequatur laudantium recusandae sint, dolor cumque cum, sapiente assumenda praesentium aliquid deserunt? Voluptatibus?
+    Dolores dolor quae minus, porro id quod modi enim. Velit earum reiciendis odit tempora, eaque magnam. Doloremque a fugit vitae totam sapiente. Excepturi eveniet obcaecati porro quod sit perspiciatis voluptatem.
+    Asperiores aspernatur vitae error at consequatur. Sunt placeat laborum, repellendus illo magnam reiciendis dolorem numquam ab fugit, earum culpa officia inventore ipsum enim dignissimos. Adipisci a obcaecati nihil rem quisquam.
+    Quae fuga quia dignissimos consequatur repellat nostrum error fugit eligendi quidem ipsa a enim obcaecati saepe delectus dolor laboriosam porro dolores, deleniti ipsum nobis alias! Ducimus eos consequuntur voluptas non?
+    Itaque facilis aut ducimus dignissimos! Facere obcaecati corporis, esse, at incidunt necessitatibus veritatis, error repellat nam ullam magni cupiditate pariatur magnam cumque odio molestias natus aut excepturi aliquam suscipit neque.
+    Qui minus, minima officiis vero nesciunt laborum consectetur eius eos labore rem itaque ut neque repellat adipisci commodi velit quos impedit quaerat quasi tenetur? Tempora dolore dolorem magnam id non?
+    Suscipit perferendis, id repellendus sint nihil sapiente ex! Iure, consequuntur voluptatum. Odit porro voluptates quaerat facilis tempora facere nihil quis eligendi praesentium repellendus? Magnam omnis soluta ducimus aliquam perferendis sed.
+    Odio ducimus dignissimos velit porro esse consequuntur, beatae et, voluptatem aliquam perspiciatis iure corrupti tenetur perferendis nisi, ex dicta odit. Iusto excepturi incidunt ea velit id reprehenderit deserunt aliquam nesciunt.
+    Sint et sunt at reiciendis cupiditate
+    pellendus eos iure aut soluta itaque saepe esse dolor dicta natus, sed optio voluptatem at consectetur. Dolorem pariatur quam quibusdam sunt obcaecati!
+    Libero, nihil officia nulla suscipit hic deserunt aliquid autem incidunt eveniet expedita nostrum perspiciatis odit quasi possimus fugit vitae aperiam reprehenderit! Soluta repellendus accusamus ipsum esse similique fuga dicta culpa.
+    Tempora itaque possimus molestiae et iure veniam, eaque nemo ipsa repellat consectetur beatae dolor sapiente non eum omnis officiis, quasi nesciunt facere assumenda. Quae animi totam tenetur natus, consequatur velit.
+    Dolorum, accusantium deleniti, provident molestias architecto eligendi ratione odit iusto eveniet ad enim. Molestiae explicabo deserunt ullam modi ad. Porro delectus error dolor laboriosam. Cum quae vitae cupiditate dolorum corrupti!
+    Omnis eveniet optio oditvoluptatibus ut, voluptates quia facilis esse tempora atque accusamus ipsum perferendis?
+    Culpa recusandae, minima ipsa facilis eveniet voluptates vitae alias eligendi repellendus id natus ullam ipsam consectetur autem quam quidem cum. Id aliquam, repudiandae hic alias tenetur ex accusamus tempore aspernatur?
+</div>
+
+
+    </main>
+
+    <footer class="pt-20 pb-5">
+
+        <!-- title -->
+        <div class="flex items-center justify-center mb-5">
+            <h2 class="text-lg font-bold">Suivez-nous</h2>
+            <span class="ml-5"><i class="fas fa-chevron-right"></i></span>
+        </div>
+
+        <div class="flex justify-center">
+            <div class="flex text-gray-400">
+                <div class="hover:text-white w-14 h-14 p-3 bg-gray-700 rounded-full text-center">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+                <div class="hover:text-white w-14 h-14 p-3 bg-gray-700 rounded-full text-center mx-4">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </div>
+                <div class="hover:text-white w-14 h-14 p-3 bg-gray-700 rounded-full text-center">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex justify-center mt-20 mb-5 border-t-2 border-gray-800 pt-5">
+            <ul class="flex text-gray-400 text-sm">
+                <li class="hover:text-white hover:underline"><a href="#">Contact</a></li>
+                <li class="hover:text-white hover:underline mx-3"><a href="#">Mentions légales</a></li>
+                <li class="hover:text-white hover:underline"><a href="#">Vie privée</a></li>
+            </ul>
+        </div>
+
+        <div class="flex justify-center">
+            <p class="text-gray-400 text-sm">© 2021 vendredi.company</p>
+        </div>
+
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('#menu-btn')
+        const dropdown = document.querySelector('#dropdown')
+        let searchfield = document.getElementById('searchfield');
+        let searchicon = document.getElementById('searchicon');
+
+        menuBtn.addEventListener('click', () => {
+            if (dropdown.classList.contains('hidden')) {
+                dropdown.classList.remove('hidden');
+                searchfield.focus();
+                // dropdown.classList.add('flex');
+            } else {
+
+                dropdown.classList.add('hidden')
+            }
+        });
+
+
+
+        // Detect all clicks on the document
+        document.addEventListener('click', function (event) {
+            // If user clicks inside the element, do nothing
+            if (event.target.closest('#menu-btn') || event.target.id == "searchfield" || event.target.id ==
+                "searchicon") return
+            // If user clicks outside the element, hide it!
+            dropdown.classList.add('hidden')
+        })
+    </script>
+
+</body>
+
+</html>
