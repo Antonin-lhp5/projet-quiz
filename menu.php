@@ -3,7 +3,7 @@
         <nav class="flex justify-between items-center sm:items-baseline pb-3 sm:pb-0 pt-3 px-5 lg:px-0">
             <div class="text-light tracking-wide space-x-4 hidden sm:inline-flex">
                 <a href="index.php" class="border-b-2 border-gray-500 pb-3 hover:text-white">Accueil</a>
-                <a href="#" class="border-b-2 border-pink-500 pb-3 hover:text-white">Explorer</a>
+                <a href="explorer.php" class="border-b-2 border-pink-500 pb-3 hover:text-white">Explorer</a>
                 <a href="#category" class="hover:text-white">Catégories</a>
                 <a href="#news" class="hover:text-white">Nouveautés</a>
             </div>

@@ -182,7 +182,7 @@
 
                 <div>
                     <a class="flex py-2 md:py-3 px-3 group rounded-lg hover:bg-gray-800 hover:shadow-lg transition duration-300 ease-in-out">
-                        <img class="h-20 w-20 md:h-24 md:w-24 rounded-lg " src="img/parthenon.jpg" alt="">
+                        <img class="h-20 w-20 md:h-24 md:w-24 rounded-lg " src="img/greek.jpg" alt="">
                         <div class="pl-5 py-1 space-y-1">
                             <h1 class="text-xs sm:text-sm">Histoire</h1>
                             <h2 class="text-sm sm:text-base custom-truncate leading-tight group-hover:text-indigo-200">
